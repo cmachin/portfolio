@@ -2,7 +2,9 @@
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+html, body {
+	height: 100%;
+	width: 100%;
 	margin: 0;
 }
 
@@ -11,6 +13,15 @@ header {
 	color: white;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+#name {
+	font-size: x-large;
+	font-weight: 10;
 }
 
 header h1 {
@@ -36,15 +47,32 @@ i {
 
 nav {
 	float: left;
-	background: whitesmoke;
+	background: #2a313c;
 	padding: 1rem;
-	height: calc(100vh - 100%);
+	height: 100vh;
+	width: 10rem;
+	position: fixed;
 }
 
 h2 {
+	font-size: medium;
+	color:white;
+	font-weight: 10;
 }
 
 h2:hover {
 	cursor: pointer;
-	color: #444f61;
+	color: #444f61 !important;
+}
+
+main {
+	margin: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	text-indent: 5rem;
+}
+
+iframe {
+	width: 70vw;
+	height: 100vh;
 }
