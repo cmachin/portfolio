@@ -35,15 +35,17 @@
 			</div>
 		</header>
 		<nav>
-			<h2 onclick="show('resume')">Resume</h2>
-			<h2 onclick="show('education')">Education</h2>
-			<h2 onclick="show('work')">Work History</h2>
-			<h2 onclick="show('research')">Research</h2>
-			<h2 onclick="show('certifications')">Certifications</h2>
-			<h2 onclick="show('skills')">Skills</h2>
+			<h2 id="resumeTab" onclick="show('resume')">Resume</h2>
+			<h2 id="educationTab" onclick="show('education')">Education</h2>
+			<h2 id="workTab" onclick="show('work')">Work History</h2>
+			<h2 id="researchTab" onclick="show('research')">Research</h2>
+			<h2 id="certificationsTab" onclick="show('certifications')">
+				Certifications
+			</h2>
+			<h2 id="skillsTab" onclick="show('skills')">Skills</h2>
 		</nav>
 		<main>
-			<div id="resume">This is my resume.</div>
+			<div id="resume" hidden>This is my resume.</div>
 			<div id="education" hidden>This is my education.</div>
 			<div id="work" hidden>This is my work experience.</div>
 			<div id="research" hidden>This is my research.</div>
