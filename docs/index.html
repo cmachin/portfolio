@@ -5,9 +5,50 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.min.js"
+			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+			crossorigin="anonymous"
+		></script>
+
+		<script src="app.js" defer></script>
+
 		<title>Portfolio</title>
 	</head>
 	<body>
-		<header>Carlos A. Machin Portfolio</header>
+		<header>
+			<div style="display: flex">
+				<h1 style="font-weight: 10">Carlos A. Machin</h1>
+				<h1>Portfolio</h1>
+			</div>
+			<div>
+				<a href="https://github.com/cmachin">
+					<i class="devicon-github-original"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/carlos-machin/">
+					<i class="devicon-linkedin-plain"></i>
+				</a>
+			</div>
+		</header>
+		<nav>
+			<h2 onclick="show('resume')">Resume</h2>
+			<h2 onclick="show('education')">Education</h2>
+			<h2 onclick="show('work')">Work History</h2>
+			<h2 onclick="show('research')">Research</h2>
+			<h2 onclick="show('certifications')">Certifications</h2>
+			<h2 onclick="show('skills')">Skills</h2>
+		</nav>
+		<main>
+			<div id="resume">This is my resume.</div>
+			<div id="education" hidden>This is my education.</div>
+			<div id="work" hidden>This is my work experience.</div>
+			<div id="research" hidden>This is my research.</div>
+			<div id="certifications" hidden>These are my certifications.</div>
+			<div id="skills" hidden>These are my skills.</div>
+		</main>
 	</body>
 </html>
