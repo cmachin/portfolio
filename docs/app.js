@@ -11,3 +11,13 @@ function show(option) {
 	$("#" + option).show();
 	$("#" + option + "Tab").css("color", "#a5c1ee");
 }
+
+function sidebar() {
+	console.log("Showing sidebar");
+
+	if ($("#hamburguer-menu nav").is(":visible")) {
+		$("#hamburguer-menu nav").hide();
+	} else {
+		$("#hamburguer-menu nav").show();
+	}
+}

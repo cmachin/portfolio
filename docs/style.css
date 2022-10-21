@@ -7,6 +7,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	padding: 0;
 }
 
 header {
@@ -16,23 +17,72 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
-	top: 0;
-	z-index: 1;
 }
 
-header h1 {
-	margin-left: 1rem;
+header h1,
+header a,
+header #hamburguer-menu {
+	margin: 1rem;
+}
+
+#hamburguer-menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#hamburguer-menu button {
+	width: 2rem;
+	height: 2rem;
+	position: sticky;
+	/* display: flex; */
+	border: none;
+	padding: 0;
+	background: linear-gradient(
+		to bottom,
+		white,
+		white 20%,
+		#2a313c 20%,
+		#2a313c 40%,
+		white 40%,
+		white 60%,
+		#2a313c 60%,
+		#2a313c 80%,
+		white 80%,
+		white 100%
+	);
+}
+
+#hamburguer-menu button:hover {
+	cursor: pointer;
+}
+
+#hamburguer-menu nav {
+	position: fixed;
+	top: 4rem;
+	left: 0;
+	background: #2a313c;
+	height: 100vh;
+	width: 10rem;
+	padding: 0;
+	text-align: left;
+	color: white;
+}
+
+#hamburguer-menu nav h1 {
+	margin-top: 1rem;
+	cursor: default;
+	font-size: x-large;
 }
 
 #name {
 	font-size: x-large;
 	font-weight: 10;
-	margin-left: 9rem;
+	margin: 0 0 0 2rem;
 }
 
 header a {
 	text-decoration: none;
-	margin: 1rem 1rem 1rem 0.5rem;
 }
 
 header a:visited {
@@ -51,14 +101,6 @@ i {
 	font-size: 2.5rem;
 }
 
-nav {
-	float: left;
-	background: #2a313c;
-	height: 100vh;
-	width: 10rem;
-	position: fixed;
-}
-
 h2 {
 	font-size: medium;
 	color: white;
@@ -72,15 +114,15 @@ h2:hover {
 }
 
 main {
-	width: calc(100vw - 10rem);
-	float: right;
 	display: flex;
 	justify-content: space-evenly;
+	text-align: center;
 }
 
 #about p {
-	margin: 5vh 30vw 5vh 30vw;
+	margin: 1rem 1rem 2rem 1rem;
 	text-align: justify;
+	max-width: 40rem;
 }
 
 #resume-button {
@@ -90,26 +132,29 @@ main {
 	color: white;
 	border-radius: 10rem;
 	padding: 0.5rem 2rem 0.5rem 2rem;
-	margin-left: calc(50vw - 8.5rem);
+	/* margin-left: calc(50vw - 8.5rem); */
 }
 
 #resume-button:visited {
 	color: white;
 }
 
+#resume-button:hover {
+	box-shadow: 0 0 3px 1px rgb(147, 147, 147);
+}
+
 #about img {
 	border-radius: 10rem;
 	width: 15rem;
-	margin-top: 5vh;
-}
-
-#certifications img {
-	margin: 2rem;
-	width: 30rem;
+	/* margin-top: 1rem; */
 }
 
 #projects {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-shrink: inherit;
 }
 
 #projects img {
@@ -128,4 +173,22 @@ main {
 
 figure {
 	text-align: center;
+}
+
+figcaption {
+	font-size: larger;
+	font-weight: 600;
+}
+
+#certifications img {
+	margin: 2rem;
+	width: 30rem;
+}
+
+.hide {
+	visibility: hidden;
+}
+
+.show {
+	visibility: visible;
 }

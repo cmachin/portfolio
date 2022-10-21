@@ -15,15 +15,28 @@
 			integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
 			crossorigin="anonymous"
 		></script>
-
 		<script src="app.js" defer></script>
 
 		<title>Portfolio</title>
 	</head>
 	<body>
+		<!-- Header -->
 		<header>
-			<h1>Portfolio</h1>
-			<h1 id="name">Carlos A. Machin</h1>
+			<!-- Navigation -->
+			<div id="hamburguer-menu">
+				<button onclick="sidebar()">
+					<nav hidden>
+						<h1>Portfolio</h1>
+						<h2 id="aboutTab" onclick="show('about')">About</h2>
+						<h2 id="projectsTab" onclick="show('projects')">Projects</h2>
+						<h2 id="certificationsTab" onclick="show('certifications')">
+							Certifications
+						</h2>
+					</nav>
+				</button>
+				<h1 id="name">Carlos A. Machin</h1>
+			</div>
+
 			<div>
 				<a href="https://github.com/cmachin" target="_blank">
 					<i class="devicon-github-original"></i>
@@ -33,14 +46,12 @@
 				</a>
 			</div>
 		</header>
-		<nav>
-			<h2 id="aboutTab" onclick="show('about')">About</h2>
-			<h2 id="projectsTab" onclick="show('projects')">Projects</h2>
-			<h2 id="certificationsTab" onclick="show('certifications')">
-				Certifications
-			</h2>
-		</nav>
+
+		<div class="overlay"></div>
+
+		<!-- Content -->
 		<main>
+			<!-- About -->
 			<div id="about" hidden>
 				<figure>
 					<img src="assets/profile.jpg" alt="Profile Picture" />
@@ -58,6 +69,7 @@
 					>Resume</a
 				>
 			</div>
+			<!-- Projects -->
 			<div id="projects" hidden>
 				<a
 					href="https://github.com/UPRM-Bio-Optics/Bathymetry-Observation-Boat"
@@ -86,6 +98,7 @@
 				>
 			</div>
 
+			<!-- Certifications -->
 			<div id="certifications" hidden>
 				<a
 					href="https://www.hackerrank.com/certificates/d8ff64c7897e"
