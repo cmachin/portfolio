@@ -184,7 +184,7 @@ figcaption {
 #certifications img {
 	margin: 2rem;
 	width: 30rem;
-	min-width: 10rem;
+	min-width: 10vw;
 }
 
 .hide {
