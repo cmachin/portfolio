@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="style.css" />
 		<link
 			rel="stylesheet"
@@ -21,40 +22,91 @@
 	</head>
 	<body>
 		<header>
-			<h1 id="name">Carlos A. Machin</h1>
 			<h1>Portfolio</h1>
-
+			<h1 id="name">Carlos A. Machin</h1>
 			<div>
-				<a href="https://github.com/cmachin">
+				<a href="https://github.com/cmachin" target="_blank">
 					<i class="devicon-github-original"></i>
 				</a>
-				<a href="https://www.linkedin.com/in/carlos-machin/">
+				<a href="https://www.linkedin.com/in/carlos-machin/" target="_blank">
 					<i class="devicon-linkedin-plain"></i>
 				</a>
 			</div>
 		</header>
 		<nav>
-			<h2 id="resumeTab" onclick="show('resume')">Resume</h2>
-			<h2 id="educationTab" onclick="show('education')">Education</h2>
-			<h2 id="workTab" onclick="show('work')">Work History</h2>
-			<h2 id="researchTab" onclick="show('research')">Research</h2>
+			<h2 id="aboutTab" onclick="show('about')">About</h2>
+			<h2 id="projectsTab" onclick="show('projects')">Projects</h2>
 			<h2 id="certificationsTab" onclick="show('certifications')">
 				Certifications
 			</h2>
-			<h2 id="skillsTab" onclick="show('skills')">Skills</h2>
 		</nav>
 		<main>
-			<div id="resume" hidden>
-				<iframe
-					src="assets/Resume_Carlos_Machin_22.pdf"
-					frameborder="0"
-				></iframe>
+			<div id="about" hidden>
+				<figure>
+					<img src="assets/profile.jpg" alt="Profile Picture" />
+				</figure>
+				<p>
+					Software Engineering student dedicated to improving skills through
+					hands-on learning and development work. Experienced in Agile and Scrum
+					environments. Well-organized and collaborative team player with strong
+					communication and analytical abilities.
+				</p>
+				<a
+					href="assets/Resume_Carlos_Machin_22.pdf"
+					id="resume-button"
+					target="_blank"
+					>Resume</a
+				>
 			</div>
-			<div id="education" hidden>This is my education.</div>
-			<div id="work" hidden>This is my work experience.</div>
-			<div id="research" hidden>This is my research.</div>
-			<div id="certifications" hidden>These are my certifications.</div>
-			<div id="skills" hidden>These are my skills.</div>
+			<div id="projects" hidden>
+				<a
+					href="https://github.com/UPRM-Bio-Optics/Bathymetry-Observation-Boat"
+					target="_blank"
+					><figure>
+						<img src="assets/rov.jpg" alt="ROV" />
+						<figcaption>Bathymetry Observation Boat</figcaption>
+					</figure></a
+				>
+				<a
+					href="https://github.com/UPRM-Bio-Optics/Data-Visualization-App"
+					target="_blank"
+					><figure>
+						<img src="assets/plot.png" alt="Data Visualization" />
+						<figcaption>Data Visualization</figcaption>
+					</figure>
+				</a>
+
+				<a
+					href="https://github.com/SERRT-Telemetry/Telemetry_V1"
+					target="_blank"
+					><figure>
+						<img src="assets/solarcar.jpeg" alt="Solar Car" />
+						<figcaption>Solar Powered Race Car</figcaption>
+					</figure></a
+				>
+			</div>
+
+			<div id="certifications" hidden>
+				<a
+					href="https://www.hackerrank.com/certificates/d8ff64c7897e"
+					target="_blank"
+					><img src="assets/java_certificate.png" alt="Java Certificate"
+				/></a>
+				<a
+					href="https://www.hackerrank.com/certificates/1a504d147973"
+					target="_blank"
+					><img src="assets/python_certificate.png" alt="Python Certificate"
+				/></a>
+				<a
+					href="https://www.hackerrank.com/certificates/177cf9d6cc1c"
+					target="_blank"
+					><img
+						src="assets/javascript_certificate.png"
+						alt="JavaScript Certificate"
+				/></a>
+			</div>
 		</main>
 	</body>
 </html>
+
+<!-- Hosted at: https://cmachin.github.io/portfolio/ -->

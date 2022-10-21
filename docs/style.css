@@ -20,18 +20,19 @@ header {
 	z-index: 1;
 }
 
+header h1 {
+	margin-left: 1rem;
+}
+
 #name {
 	font-size: x-large;
 	font-weight: 10;
-}
-
-header h1 {
-	margin: 1rem;
+	margin-left: 9rem;
 }
 
 header a {
 	text-decoration: none;
-	margin: 1rem;
+	margin: 1rem 1rem 1rem 0.5rem;
 }
 
 header a:visited {
@@ -42,6 +43,10 @@ header a:link {
 	color: white;
 }
 
+header:hover {
+	cursor: default;
+}
+
 i {
 	font-size: 2.5rem;
 }
@@ -49,7 +54,6 @@ i {
 nav {
 	float: left;
 	background: #2a313c;
-	padding: 1rem;
 	height: 100vh;
 	width: 10rem;
 	position: fixed;
@@ -59,21 +63,69 @@ h2 {
 	font-size: medium;
 	color: white;
 	font-weight: 10;
+	margin: 1rem;
 }
 
 h2:hover {
 	cursor: pointer;
-	color: #444f61 !important;
+	color: #a5c1ee !important;
 }
 
 main {
-	margin: 1rem;
+	width: calc(100vw - 10rem);
+	float: right;
 	display: flex;
 	justify-content: space-evenly;
-	text-indent: 5rem;
 }
 
-iframe {
-	width: 70vw;
-	height: 100vh;
+#about p {
+	margin: 5vh 30vw 5vh 30vw;
+	text-align: justify;
+}
+
+#resume-button {
+	text-decoration: none;
+	border: 2px solid #2a313c;
+	background: #2a313c;
+	color: white;
+	border-radius: 10rem;
+	padding: 0.5rem 2rem 0.5rem 2rem;
+	margin-left: calc(50vw - 8.5rem);
+}
+
+#resume-button:visited {
+	color: white;
+}
+
+#about img {
+	border-radius: 10rem;
+	width: 15rem;
+	margin-top: 5vh;
+}
+
+#certifications img {
+	margin: 2rem;
+	width: 30rem;
+}
+
+#projects {
+	display: flex;
+}
+
+#projects img {
+	margin: 2rem;
+	width: 20rem;
+	border-radius: 5rem;
+}
+
+#projects a {
+	text-decoration: none;
+}
+
+#projects a:visited {
+	color: black;
+}
+
+figure {
+	text-align: center;
 }

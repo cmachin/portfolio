@@ -1,4 +1,4 @@
-show("resume");
+show("about");
 
 function show(option) {
 	console.log("Showing: " + option);
@@ -9,5 +9,5 @@ function show(option) {
 
 	// Show the selected tab's content and mark it with a different font color
 	$("#" + option).show();
-	$("#" + option + "Tab").css("color", "#444f61");
+	$("#" + option + "Tab").css("color", "#a5c1ee");
 }
