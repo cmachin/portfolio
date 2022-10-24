@@ -15,9 +15,9 @@ function show(option) {
 function sidebar() {
 	console.log("Showing sidebar");
 
-	if ($("#hamburguer-menu nav").is(":visible")) {
-		$("#hamburguer-menu nav").hide();
+	if ($("#hamburguer nav").is(":visible")) {
+		$("#hamburguer nav").hide();
 	} else {
-		$("#hamburguer-menu nav").show();
+		$("#hamburguer nav").show();
 	}
 }

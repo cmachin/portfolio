@@ -1,11 +1,10 @@
 * {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	border: 1px solid red;
 }
 
 html,
 body {
-	height: 100%;
-	width: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -19,19 +18,14 @@ header {
 	position: sticky;
 }
 
-header h1,
-header a,
-header #hamburguer-menu {
-	margin: 1rem;
-}
-
-#hamburguer-menu {
+#hamburguer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
+	width: 16rem;
 }
 
-#hamburguer-menu button {
+#hamburguer button {
 	width: 2rem;
 	height: 2rem;
 	position: sticky;
@@ -53,11 +47,11 @@ header #hamburguer-menu {
 	);
 }
 
-#hamburguer-menu button:hover {
+#hamburguer button:hover {
 	cursor: pointer;
 }
 
-#hamburguer-menu nav {
+#hamburguer nav {
 	position: fixed;
 	top: 4rem;
 	left: 0;
@@ -69,36 +63,21 @@ header #hamburguer-menu {
 	color: white;
 }
 
-#hamburguer-menu nav h1 {
-	margin-top: 1rem;
-	cursor: default;
-	font-size: x-large;
-}
 
-#name {
+#hamburguer h1 {
 	font-size: x-large;
 	font-weight: 10;
-	margin: 0 0 0 2rem;
 }
 
-header a {
-	text-decoration: none;
-}
-
-header a:visited {
-	color: white;
-}
-
-header a:link {
-	color: white;
-}
-
-header:hover {
+#hamburguer h2 {
 	cursor: default;
+	font-size: x-large;
+	font-weight: 800;
 }
 
-i {
-	font-size: 2.5rem;
+#hamburguer h3 {
+	font-size: large;
+	font-weight: 100;
 }
 
 h2 {
@@ -111,6 +90,29 @@ h2 {
 h2:hover {
 	cursor: pointer;
 	color: #a5c1ee !important;
+}
+
+#socials {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 8rem;
+}
+
+#socials a {
+	text-decoration: none;
+}
+
+#socials  a:visited {
+	color: white;
+}
+
+#socials  a:link {
+	color: white;
+}
+
+#socials i {
+	font-size: 2.5rem;
 }
 
 main {
@@ -132,7 +134,6 @@ main {
 	color: white;
 	border-radius: 10rem;
 	padding: 0.5rem 2rem 0.5rem 2rem;
-	/* margin-left: calc(50vw - 8.5rem); */
 }
 
 #resume-button:visited {
