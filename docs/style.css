@@ -12,10 +12,12 @@ body {
 header {
 	background: #2a313c;
 	color: white;
+	/* height: 10vh; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	position: sticky;
+	top: 0;
 }
 
 #hamburguer {
@@ -28,7 +30,7 @@ header {
 #hamburguer button {
 	width: 2rem;
 	height: 2rem;
-	position: sticky;
+	/* position: sticky; */
 	/* display: flex; */
 	border: none;
 	padding: 0;
@@ -54,15 +56,19 @@ header {
 #hamburguer nav {
 	position: fixed;
 	top: 4rem;
-	left: 0;
+	left: -10rem;
 	background: #2a313c;
 	height: 100vh;
 	width: 10rem;
-	padding: 0;
 	text-align: left;
 	color: white;
+	z-index: 0;
+	transition: left 0.2s;
 }
 
+/* #hamburguer nav:hover {
+	left: 0;
+} */
 
 #hamburguer h1 {
 	font-size: x-large;
@@ -73,22 +79,16 @@ header {
 	cursor: default;
 	font-size: x-large;
 	font-weight: 800;
+	text-indent: 0.5rem;
 }
 
 #hamburguer h3 {
 	font-size: large;
 	font-weight: 100;
+	text-indent: 1rem;
 }
 
-h2 {
-	font-size: medium;
-	color: white;
-	font-weight: 10;
-	margin: 1rem;
-}
-
-h2:hover {
-	cursor: pointer;
+#hamburguer h3:hover{
 	color: #a5c1ee !important;
 }
 
@@ -147,7 +147,6 @@ main {
 #about img {
 	border-radius: 10rem;
 	width: 15rem;
-	/* margin-top: 1rem; */
 }
 
 #projects {
@@ -161,6 +160,7 @@ main {
 #projects img {
 	margin: 2rem;
 	width: 30rem;
+	height: 15rem;
 	min-width: 10rem;
 	border-radius: 5rem;
 }
@@ -185,6 +185,7 @@ figcaption {
 #certifications img {
 	margin: 2rem;
 	width: 30rem;
+	height: 20rem;
 	min-width: 10vw;
 }
 
