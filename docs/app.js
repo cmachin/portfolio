@@ -7,10 +7,12 @@ function show(option) {
 
 	// Hide content from other tabs and reset nav bar font color
 	$("#hamburguer nav h3").css("color", "white");
+	$("main > *").css("opacity", "0%");
 	$("main > *").hide();
 
 	// Show the selected tab's content and mark it with a different font color
 	$("#" + option).show();
+	$("main > *").css("opacity", "100%");
 	$("#" + option + "Tab").css("color", "#a5c1ee");
 }
 

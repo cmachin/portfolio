@@ -22,6 +22,7 @@ header {
 	align-items: center;
 	position: sticky;
 	top: 0;
+	z-index: 1;
 }
 
 #hamburguer {
@@ -48,6 +49,22 @@ header {
 		var(--primary-color) 80%,
 		white 80%,
 		white 100%
+	);
+}
+
+#hamburguer button:hover {
+	background: linear-gradient(
+		to bottom,
+		var(--secondary-color),
+		var(--secondary-color) 20%,
+		var(--primary-color) 20%,
+		var(--primary-color) 40%,
+		var(--secondary-color) 40%,
+		var(--secondary-color) 60%,
+		var(--primary-color) 60%,
+		var(--primary-color) 80%,
+		var(--secondary-color) 80%,
+		var(--secondary-color) 100%
 	);
 }
 
@@ -113,10 +130,19 @@ header {
 	font-size: 2.5rem;
 }
 
+#socials i:hover {
+	color: var(--secondary-color);
+}
+
 main {
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
+}
+
+main > * {
+	opacity: 0%;
+	transition: opacity 0.2s;
 }
 
 #about p {
