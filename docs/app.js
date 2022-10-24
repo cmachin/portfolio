@@ -23,8 +23,7 @@ function sidebar() {
 	} else {
 		// $("#hamburguer nav").show();
 		$("#hamburguer nav").css("left", "0");
-
 	}
-	
+
 	nav_open = !nav_open;
 }

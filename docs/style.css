@@ -1,6 +1,11 @@
+:root {
+	--primary-color: #2a313c;
+	--secondary-color: #a5c1ee;
+}
+
 * {
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 html,
@@ -10,9 +15,8 @@ body {
 }
 
 header {
-	background: #2a313c;
+	background: var(--primary-color);
 	color: white;
-	/* height: 10vh; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -30,20 +34,18 @@ header {
 #hamburguer button {
 	width: 2rem;
 	height: 2rem;
-	/* position: sticky; */
-	/* display: flex; */
 	border: none;
 	padding: 0;
 	background: linear-gradient(
 		to bottom,
 		white,
 		white 20%,
-		#2a313c 20%,
-		#2a313c 40%,
+		var(--primary-color) 20%,
+		var(--primary-color) 40%,
 		white 40%,
 		white 60%,
-		#2a313c 60%,
-		#2a313c 80%,
+		var(--primary-color) 60%,
+		var(--primary-color) 80%,
 		white 80%,
 		white 100%
 	);
@@ -57,7 +59,7 @@ header {
 	position: fixed;
 	top: 4rem;
 	left: -10rem;
-	background: #2a313c;
+	background: var(--primary-color);
 	height: 100vh;
 	width: 10rem;
 	text-align: left;
@@ -65,10 +67,6 @@ header {
 	z-index: 0;
 	transition: left 0.2s;
 }
-
-/* #hamburguer nav:hover {
-	left: 0;
-} */
 
 #hamburguer h1 {
 	font-size: x-large;
@@ -88,8 +86,8 @@ header {
 	text-indent: 1rem;
 }
 
-#hamburguer h3:hover{
-	color: #a5c1ee !important;
+#hamburguer h3:hover {
+	color: var(--secondary-color) !important;
 }
 
 #socials {
@@ -103,11 +101,11 @@ header {
 	text-decoration: none;
 }
 
-#socials  a:visited {
+#socials a:visited {
 	color: white;
 }
 
-#socials  a:link {
+#socials a:link {
 	color: white;
 }
 
@@ -124,13 +122,13 @@ main {
 #about p {
 	margin: 1rem 1rem 2rem 1rem;
 	text-align: justify;
-	max-width: 40rem;
+	max-width: 30rem;
+	color: var(--primary-color);
 }
 
 #resume-button {
 	text-decoration: none;
-	border: 2px solid #2a313c;
-	background: #2a313c;
+	background: var(--primary-color);
 	color: white;
 	border-radius: 10rem;
 	padding: 0.5rem 2rem 0.5rem 2rem;
@@ -141,7 +139,7 @@ main {
 }
 
 #resume-button:hover {
-	box-shadow: 0 0 3px 1px rgb(147, 147, 147);
+	background-color: var(--secondary-color);
 }
 
 #about img {
@@ -152,47 +150,35 @@ main {
 #projects {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
-	flex-shrink: inherit;
 }
 
 #projects img {
-	margin: 2rem;
-	width: 30rem;
-	height: 15rem;
-	min-width: 10rem;
-	border-radius: 5rem;
+	width: 20rem;
 }
 
-#projects a {
-	text-decoration: none;
-}
-
-#projects a:visited {
-	color: black;
-}
-
-figure {
-	text-align: center;
-}
-
-figcaption {
+#projects figcaption {
 	font-size: larger;
 	font-weight: 600;
 }
 
+#projects a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+#projects a:visited {
+	color: var(--primary-color);
+}
+
+#certifications {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
 #certifications img {
-	margin: 2rem;
-	width: 30rem;
-	height: 20rem;
-	min-width: 10vw;
-}
-
-.hide {
-	visibility: hidden;
-}
-
-.show {
-	visibility: visible;
+	width: 20rem;
 }
