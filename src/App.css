@@ -1,0 +1,29 @@
+.slide {
+	text-align: center;
+	background: gainsboro;
+}
+
+.slide > img {
+	height: 60vh;
+	background: #f8f9fa;
+	/* filter: brightness(80%); */
+}
+
+.slide:hover {
+	cursor: pointer;
+}
+
+.center-text {
+	text-align: center;
+	margin: 1rem;
+}
+
+.caption {
+	color: black;
+	cursor: pointer;
+	/* border: 1px solid red; */
+}
+
+.pointer-cursor {
+	cursor: pointer;
+}
