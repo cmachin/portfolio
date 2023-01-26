@@ -4,24 +4,22 @@ import Navbar from "react-bootstrap/Navbar";
 
 export default function Navigation(props) {
 	return (
-		<Navbar bg="light" expand="lg">
+		<Navbar bg="dark" variant="dark" expand="lg" sticky="top" collapseOnSelect>
 			<Container>
-				<Navbar.Brand
-					className="pointer-cursor"
-					onClick={() => {
-						props.setContent("home");
-					}}
-				>
-					Carlos's Porfolio
-				</Navbar.Brand>
+				<Navbar.Brand className="brand-name">Carlos's Porfolio</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
-				<Navbar.Collapse id="basic-navbar-nav">
+				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link onClick={() => props.setContent("projects")}>
+						<Nav.Link href="#" onClick={() => props.setContent("home")}>
+							Home
+						</Nav.Link>
+						<Nav.Link href="#" onClick={() => props.setContent("projects")}>
 							Projects
 						</Nav.Link>
-						<Nav.Link onClick={() => props.setContent("work")}>Work</Nav.Link>
-						<Nav.Link onClick={() => props.setContent("research")}>
+						<Nav.Link href="#" onClick={() => props.setContent("work")}>
+							Work
+						</Nav.Link>
+						<Nav.Link href="#" onClick={() => props.setContent("research")}>
 							Research
 						</Nav.Link>
 					</Nav>

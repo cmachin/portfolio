@@ -8,8 +8,8 @@ export default function Work() {
 		</>
 	);
 	return (
-		<Container className="cards-work">
-			<Card className="card-work">
+		<Container className="timelines">
+			<Card className="timeline">
 				<Card.Header>May 2023 - Jul 2023</Card.Header>
 				<Card.Body>
 					<Card.Title>GE Healthcare</Card.Title>
@@ -24,7 +24,7 @@ export default function Work() {
 				</Card.Body>
 			</Card>
 			{separator}
-			<Card className="card-work">
+			<Card className="timeline">
 				<Card.Header>Jul 2021 - Sep 2021</Card.Header>
 				<Card.Body>
 					<Card.Title>Instarz</Card.Title>
@@ -39,7 +39,7 @@ export default function Work() {
 				</Card.Body>
 			</Card>
 			{separator}
-			<Card className="card-work">
+			<Card className="timeline">
 				<Card.Header>Jun 2019 - Aug 2019</Card.Header>
 				<Card.Body>
 					<Card.Title>Emsys Design</Card.Title>

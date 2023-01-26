@@ -31,39 +31,49 @@
 	/* border: 1px solid red; */
 }
 
-.pointer-cursor {
-	cursor: pointer;
+.brand-name {
+	cursor: default;
 }
 
-.cards-research {
+.cards {
 	display: flex;
 	justify-content: center;
+	/* margin: auto; */
 	/* border: 2px solid red; */
 }
 
-.card-research {
-	max-width: 75%;
-	margin: 2rem 0 0 0;
+.card {
+	max-width: 20rem;
+	margin: auto;
+	margin-top: 2rem;
 	height: min-content;
-	/* height: 70%; */
 	/* border: 2px solid red; */
 }
 
-.cards-work {
+.timelines {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	width: 100vw;
+	margin-top: 2rem;
 	/* border: 2px solid red; */
 }
 
-.card-work {
+.timeline {
 	margin: 1rem 0 0 0;
 	/* width: 100vw; */
 	/* border: 2px solid red; */
 }
 
-.card-work i {
+.timeline i {
 	font-size: 1.1rem;
 	color: rgb(62, 62, 62);
+}
+
+.footer {
+	margin: auto;
+}
+
+.divider {
+	margin: 5rem;
 }

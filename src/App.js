@@ -2,6 +2,7 @@ import { useState } from "react";
 import Fade from "react-bootstrap/Fade";
 import "./App.css";
 import Content from "./components/Content";
+import Footer from "./components/Footer";
 import Navigation from "./components/Navbar";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
 					/>
 				</div>
 			</Fade>
+			<Footer></Footer>
 		</>
 	);
 }
