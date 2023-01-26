@@ -1,3 +1,8 @@
+.carousel-slides {
+	display: flex;
+	justify-content: center;
+}
+
 .slide {
 	text-align: center;
 	background: gainsboro;
@@ -5,6 +10,7 @@
 
 .slide > img {
 	height: 60vh;
+	max-width: 100vw;
 	background: #f8f9fa;
 	/* filter: brightness(80%); */
 }
@@ -13,9 +19,10 @@
 	cursor: pointer;
 }
 
-.center-text {
+.mission {
 	text-align: center;
 	margin: 1rem;
+	/* border: 1px solid red; */
 }
 
 .caption {
@@ -26,4 +33,37 @@
 
 .pointer-cursor {
 	cursor: pointer;
+}
+
+.cards-research {
+	display: flex;
+	justify-content: center;
+	/* border: 2px solid red; */
+}
+
+.card-research {
+	max-width: 75%;
+	margin: 2rem 0 0 0;
+	height: min-content;
+	/* height: 70%; */
+	/* border: 2px solid red; */
+}
+
+.cards-work {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	/* border: 2px solid red; */
+}
+
+.card-work {
+	margin: 1rem 0 0 0;
+	/* width: 100vw; */
+	/* border: 2px solid red; */
+}
+
+.card-work i {
+	font-size: 1.1rem;
+	color: rgb(62, 62, 62);
 }

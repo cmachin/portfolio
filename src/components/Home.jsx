@@ -6,7 +6,7 @@ import work from "../images/work.png";
 export default function Home(props) {
 	return (
 		<>
-			<Carousel variant="dark" interval={3000}>
+			<Carousel variant="dark" interval={3000} className="carousel-slides">
 				<Carousel.Item
 					className="slide"
 					onClick={() => props.setContent("projects")}
@@ -40,11 +40,13 @@ export default function Home(props) {
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
-			<div className="center-text">
+			<div className="mission">
 				<i>
-					"To use my skills and knowledge in software engineering to develop
-					innovative solutions for real-world problems, while continuously
-					learning and growing as a professional in the field."
+					"My mission is to infuse expertise into every line of code I write,
+					crafting software that functions flawlessly and brings efficiency to
+					users. My goal is to make a meaningful impact in the tech industry and
+					to continuously learn and improve my skills, while seeking new
+					opportunities to showcase my abilities."
 					<br />
 					<br />- ChatGPT
 				</i>
