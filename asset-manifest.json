@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1366bc41.css",
-    "main.js": "/portfolio/static/js/main.c097f039.js",
+    "main.css": "/portfolio/static/css/main.f2e69a93.css",
+    "main.js": "/portfolio/static/js/main.ced8f424.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/work.png": "/portfolio/static/media/work.71a492dbcc8a997b887d.png",
-    "static/media/bob.png": "/portfolio/static/media/bob.0d435508cd0de9741ed3.png",
+    "static/media/bob.png": "/portfolio/static/media/bob.c8968dc6e00017b8c8d4.png",
     "static/media/research.png": "/portfolio/static/media/research.8ba886c2e36408ee01d5.png",
     "static/media/projects.png": "/portfolio/static/media/projects.686a9e42939cfd9bd909.png",
-    "static/media/serrt.png": "/portfolio/static/media/serrt.18d9ecd580fb87d3f51a.png",
+    "static/media/serrt.png": "/portfolio/static/media/serrt.c6faf3ad5d8ec6481c90.png",
+    "static/media/website.png": "/portfolio/static/media/website.b9fb11df96111f1cecfd.png",
+    "static/media/doctor.png": "/portfolio/static/media/doctor.b01143cdc7b0e579e659.png",
+    "static/media/greenlease.png": "/portfolio/static/media/greenlease.2ad3a4bca752d7635980.png",
+    "static/media/databased.png": "/portfolio/static/media/databased.02963f38590baf29e22b.png",
     "index.html": "/portfolio/index.html",
-    "main.1366bc41.css.map": "/portfolio/static/css/main.1366bc41.css.map",
-    "main.c097f039.js.map": "/portfolio/static/js/main.c097f039.js.map",
+    "main.f2e69a93.css.map": "/portfolio/static/css/main.f2e69a93.css.map",
+    "main.ced8f424.js.map": "/portfolio/static/js/main.ced8f424.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1366bc41.css",
-    "static/js/main.c097f039.js"
+    "static/css/main.f2e69a93.css",
+    "static/js/main.ced8f424.js"
   ]
 }
