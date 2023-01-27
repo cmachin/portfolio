@@ -8,11 +8,11 @@ export default function Navigation() {
 	return (
 		<Navbar bg="dark" variant="dark" expand="lg" sticky="top" collapseOnSelect>
 			<Container>
-				<Navbar.Brand className="brand-name">Carlos's Porfolio</Navbar.Brand>
+				<Navbar.Brand className="brand-name">Carlos's Portfolio</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="#" onClick={() => navigate("/portfolio")}>
+						<Nav.Link href="#" onClick={() => navigate("/portfolio/home")}>
 							Home
 						</Nav.Link>
 						<Nav.Link href="#" onClick={() => navigate("/portfolio/projects")}>

@@ -43,17 +43,31 @@ export default function Home(props) {
 					</Carousel.Caption>
 				</Carousel.Item>
 			</Carousel>
-			<div className="mission">
+			<blockquote className="poem">
 				<i>
-					"My mission is to infuse expertise into every line of code I write,
-					crafting software that functions flawlessly and brings efficiency to
-					users. My goal is to make a meaningful impact in the tech industry and
-					to continuously learn and improve my skills, while seeking new
-					opportunities to showcase my abilities."
+					"I am a student of code with dreams so bright,
+					<br /> In a world of ones and zeroes, I see the light. <br />A future
+					where technology brings change, <br />
+					For the betterment of all, I feel compelled to arrange.
 					<br />
-					<br />- ChatGPT
+					<br /> With every line of code I write, <br />I aim to improve the
+					world, day and night. <br />
+					Innovative solutions to problems old, <br />
+					With software technology, my story is told. <br />
+					<br />I strive to make the world a better place, <br />
+					With each new feature and every space. <br />
+					Through my work, I will touch lives,
+					<br /> And leave a lasting impact that truly thrives. <br />
+					<br />
+					So let me be an inspiration, <br />
+					To all those who seek to bring innovation. <br />
+					For with hard work, dedication and drive, <br />I will change the
+					world and truly thrive."
 				</i>
-			</div>
+				<footer className="blockquote-footer">
+					<cite title="Source Title">ChatGPT</cite>
+				</footer>
+			</blockquote>
 		</>
 	);
 }

@@ -1,58 +1,67 @@
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
+import ListGroup from "react-bootstrap/ListGroup";
 
 export default function Work() {
-	const separator = (
-		<>
-			<br /> • <br /> • <br /> •
-		</>
-	);
+	function Separator() {
+		return (
+			<>
+				<br /> • <br /> • <br /> • <br />
+			</>
+		);
+	}
+
+	const items = [
+		{
+			date: "May 2023 - Jul 2023",
+			title: "GE Healthcare",
+			subtitle: "Software Engineering Intern",
+			description: [
+				"Developed browser-based tools for data visualization.",
+				"Prepared and submitted reports and other documentation about software development.",
+			],
+		},
+		{
+			date: "Jul 2021 - Sep 2021",
+			title: "Instarz",
+			subtitle: "Market Research Intern",
+			description: [
+				"Gathered, arranged, and corrected research data to develop 3D models for a lunar habitat.",
+				"Utilized job-related software to perform descriptive and statistical analysis of data.",
+			],
+		},
+		{
+			date: "Jun 2019 - Aug 2019",
+			title: "Emsys Design",
+			subtitle: "Computer Hardware Intern",
+			description: [
+				"Performed troubleshooting to correct computer hardware and software malfunctions.",
+				"Monitored company inventory to keep stock levels and databases updated.",
+			],
+		},
+	];
 	return (
-		<Container className="timelines">
-			<Card className="timeline">
-				<Card.Header>May 2023 - Jul 2023</Card.Header>
-				<Card.Body>
-					<Card.Title>GE Healthcare</Card.Title>
-					<Card.Subtitle>
-						<i>Software Engineering Intern</i>
-					</Card.Subtitle>
-					<Card.Text>
-						● Developed browser-based tools for data visualization.
-						<br />● Prepared and submitted reports and other documentation about
-						software development.
-					</Card.Text>
-				</Card.Body>
-			</Card>
-			{separator}
-			<Card className="timeline">
-				<Card.Header>Jul 2021 - Sep 2021</Card.Header>
-				<Card.Body>
-					<Card.Title>Instarz</Card.Title>
-					<Card.Subtitle>
-						<i>Market Research Intern</i>
-					</Card.Subtitle>
-					<Card.Text>
-						● Gathered, arranged, and corrected research data to develop 3D
-						models for a lunar habitat. <br />● Utilized job-related software to
-						perform descriptive and statistical analysis of data.
-					</Card.Text>
-				</Card.Body>
-			</Card>
-			{separator}
-			<Card className="timeline">
-				<Card.Header>Jun 2019 - Aug 2019</Card.Header>
-				<Card.Body>
-					<Card.Title>Emsys Design</Card.Title>
-					<Card.Subtitle>
-						<i>Computer Hardware Intern</i>
-					</Card.Subtitle>
-					<Card.Text>
-						● Performed troubleshooting to correct computer hardware and
-						software malfunctions. <br />● Monitored company inventory to keep
-						stock levels and databases updated.
-					</Card.Text>
-				</Card.Body>
-			</Card>
+		<Container fluid>
+			{items.map((item, index) => {
+				return (
+					<div key={index} className="timelines">
+						<Card className="timeline">
+							<Card.Header>{item.date}</Card.Header>
+							<Card.Body>
+								<Card.Title>{item.title}</Card.Title>
+								<Card.Subtitle>{item.subtitle}</Card.Subtitle>
+								<Card.Text></Card.Text>
+								<ListGroup variant="flush">
+									{item.description.map((desc, i) => {
+										return <ListGroup.Item key={i}>{desc}</ListGroup.Item>;
+									})}
+								</ListGroup>
+							</Card.Body>
+						</Card>
+						{index !== items.length - 1 ? <Separator /> : null}
+					</div>
+				);
+			})}
 		</Container>
 	);
 }

@@ -13,9 +13,9 @@ export default function Projects() {
 		{
 			date: "Jan 2023",
 			image: website,
-			title: "Porfolio",
+			title: "Portfolio",
 			description:
-				"Website created using React for documenting my work history, showcasing my research and displaying my coding projects",
+				"Website portfolio for documenting my work history, showcasing my research and displaying my coding projects",
 			link: "google.com",
 		},
 		{
@@ -23,13 +23,13 @@ export default function Projects() {
 			image: greenlease,
 			title: "Greenlease",
 			description:
-				"Web app that helps students from the University of Puerto Rico find rent and lease accomodations near the universtiy",
+				"Web application that helps students from the University of Puerto Rico find rent and lease accommodations near the university",
 			link: "https://github.com/cmachin?tab=repositories",
 		},
 		{
 			date: "Aug 2022 - Dec 2022",
 			image: databased,
-			title: "Databased Email App",
+			title: "Email App",
 			description:
 				"Fully functioning email platform where users can add friends, send emails, edit emails, and see some really cool stats",
 			link: "https://github.com/cmachin?tab=repositories",

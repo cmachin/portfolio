@@ -22,10 +22,10 @@ export default function Research() {
 								<Accordion.Item defaultactivekey="0" eventKey="0">
 									<Accordion.Header>More info</Accordion.Header>
 									<Accordion.Body>
-										Autonomous surface vehicle designed for gathering
-										bathymetric data. <br /> <br />I was charge of developing
-										the official laboratory website and also developed data
-										visualization tools for bathymetric data.
+										Autonomous surface vehicle designed for gathering bathymetry
+										data. <br /> <br />I was charge of developing the official
+										laboratory website and also developed data visualization
+										tools for bathymetry data.
 									</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
@@ -45,17 +45,16 @@ export default function Research() {
 						<Card.Header>Jan 2020 - Dec 2021</Card.Header>
 						<Card.Img variant="top" src={serrt} />
 						<Card.Body>
-							<Card.Title>Solar Car UPRM (SERRT)</Card.Title>
+							<Card.Title>Solar-Powered Race Car</Card.Title>
 							<Accordion>
 								<Accordion.Item defaultactivekey="0" eventKey="0">
 									<Accordion.Header>More info</Accordion.Header>
 									<Accordion.Body>
-										University of Puerto Rico’s project aimed at solar energy
-										research with a focus on transportation.
+										University of Puerto Rico’s (SERRT) project aimed at solar
+										energy research with a focus on transportation.
 										<br /> <br />
-										As part of the telemtry division, I developed telemetry
-										gathering and monitoring software for a solar powered race
-										car.
+										As part of the telemetry division, I developed telemetry
+										gathering and monitoring software.
 									</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>

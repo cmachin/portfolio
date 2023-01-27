@@ -19,9 +19,14 @@
 	cursor: pointer;
 }
 
-.mission {
+.poem {
 	text-align: center;
-	margin: 1rem;
+	margin: 2rem;
+	/* border: 1px solid red; */
+}
+
+.poem footer {
+	margin-top: 2rem;
 	/* border: 1px solid red; */
 }
 
@@ -56,13 +61,13 @@
 	flex-direction: column;
 	align-items: center;
 	/* width: 40vw; */
-	margin-top: 1rem;
+	margin: 1rem 0 0 0;
 }
 
 .timeline {
 	/* border: 2px solid blue; */
 	margin: 1rem 0 1rem 0;
-	/* width: 100rem; */
+	/* width: 100%; */
 }
 
 .footer {
@@ -77,4 +82,27 @@
 	position: absolute;
 	left: 50vw;
 	top: 30vh;
+}
+
+.fade-enter {
+	opacity: 0;
+	/* transform: translate(0, 100vh); */
+	/* z-index: 1; */
+}
+
+.fade-enter.fade-enter-active {
+	opacity: 1;
+	/* transform: translate(0, 0); */
+	transition: opacity 250ms ease-out;
+}
+
+.fade-exit {
+	opacity: 1;
+	transform: translate(0, 100vh);
+}
+
+.fade-exit.fade-exit-active {
+	opacity: 0;
+	/* transform: translate(0, 30rem); */
+	transition: opacity 250ms ease-in;
 }
