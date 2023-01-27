@@ -35,14 +35,14 @@
 	cursor: default;
 }
 
-.cards {
+.item-cards {
 	display: flex;
 	justify-content: center;
 	/* margin: auto; */
 	/* border: 2px solid red; */
 }
 
-.card {
+.item-card {
 	max-width: 20rem;
 	margin: auto;
 	margin-top: 2rem;
@@ -51,23 +51,18 @@
 }
 
 .timelines {
+	/* border: 2px solid red; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100vw;
-	margin-top: 2rem;
-	/* border: 2px solid red; */
+	/* width: 40vw; */
+	margin-top: 1rem;
 }
 
 .timeline {
-	margin: 1rem 0 0 0;
-	/* width: 100vw; */
-	/* border: 2px solid red; */
-}
-
-.timeline i {
-	font-size: 1.1rem;
-	color: rgb(62, 62, 62);
+	/* border: 2px solid blue; */
+	margin: 1rem 0 1rem 0;
+	/* width: 100rem; */
 }
 
 .footer {

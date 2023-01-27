@@ -10,24 +10,22 @@ import serrt from "../images/serrt.png";
 export default function Research() {
 	return (
 		<Container>
-			<Row className="cards">
+			<Row className="item-cards">
 				<Col sm={12} md={6}>
-					<Card className="card">
+					<Card className="item-card">
 						<Card.Header>Dec 2021 - May 2023</Card.Header>
 						<Card.Img variant="top" src={bob} />
 						<Card.Body>
 							<Card.Title>Bathymetry ASV</Card.Title>
-							<Card.Text>
-								Autonomous surface vehicle designed for gathering bathymetric
-								data.
-							</Card.Text>
+
 							<Accordion>
-								<Accordion.Item defaultActiveKey="0" eventKey="0" flush>
+								<Accordion.Item defaultactivekey="0" eventKey="0">
 									<Accordion.Header>More info</Accordion.Header>
 									<Accordion.Body>
-										In charge of developing the official laboratory website and
-										also developed data visualization tools for bathymetric
-										data.
+										Autonomous surface vehicle designed for gathering
+										bathymetric data. <br /> <br />I was charge of developing
+										the official laboratory website and also developed data
+										visualization tools for bathymetric data.
 									</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>
@@ -43,19 +41,18 @@ export default function Research() {
 					</Card>
 				</Col>
 				<Col>
-					<Card className="card">
+					<Card className="item-card">
 						<Card.Header>Jan 2020 - Dec 2021</Card.Header>
 						<Card.Img variant="top" src={serrt} />
 						<Card.Body>
 							<Card.Title>Solar Car UPRM (SERRT)</Card.Title>
-							<Card.Text>
-								University of Puerto Rico’s project aimed at solar energy
-								research with a focus on transportation.
-							</Card.Text>
 							<Accordion>
-								<Accordion.Item defaultActiveKey="0" eventKey="0" flush>
+								<Accordion.Item defaultactivekey="0" eventKey="0">
 									<Accordion.Header>More info</Accordion.Header>
 									<Accordion.Body>
+										University of Puerto Rico’s project aimed at solar energy
+										research with a focus on transportation.
+										<br /> <br />
 										As part of the telemtry division, I developed telemetry
 										gathering and monitoring software for a solar powered race
 										car.
