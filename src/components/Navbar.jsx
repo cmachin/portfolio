@@ -1,8 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { useNavigate } from "react-router-dom";
 
-export default function Navigation(props) {
+export default function Navigation() {
+	const navigate = useNavigate();
 	return (
 		<Navbar bg="dark" variant="dark" expand="lg" sticky="top" collapseOnSelect>
 			<Container>
@@ -10,16 +12,16 @@ export default function Navigation(props) {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="#" onClick={() => props.setContent("home")}>
+						<Nav.Link href="#" onClick={() => navigate("/portfolio")}>
 							Home
 						</Nav.Link>
-						<Nav.Link href="#" onClick={() => props.setContent("projects")}>
+						<Nav.Link href="#" onClick={() => navigate("/portfolio/projects")}>
 							Projects
 						</Nav.Link>
-						<Nav.Link href="#" onClick={() => props.setContent("work")}>
+						<Nav.Link href="#" onClick={() => navigate("/portfolio/work")}>
 							Work
 						</Nav.Link>
-						<Nav.Link href="#" onClick={() => props.setContent("research")}>
+						<Nav.Link href="#" onClick={() => navigate("/portfolio/research")}>
 							Research
 						</Nav.Link>
 					</Nav>

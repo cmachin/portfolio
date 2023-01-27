@@ -72,3 +72,9 @@
 .divider {
 	margin: 5rem;
 }
+
+.loader {
+	position: absolute;
+	left: 50vw;
+	top: 30vh;
+}

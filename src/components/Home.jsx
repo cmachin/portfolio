@@ -1,15 +1,18 @@
 import Carousel from "react-bootstrap/Carousel";
+import { useNavigate } from "react-router-dom";
 import projects from "../images/projects.png";
 import research from "../images/research.png";
 import work from "../images/work.png";
 
 export default function Home(props) {
+	const navigate = useNavigate();
+
 	return (
 		<>
 			<Carousel variant="dark" interval={3000} className="carousel-slides">
 				<Carousel.Item
 					className="slide"
-					onClick={() => props.setContent("projects")}
+					onClick={() => navigate("/portfolio/projects")}
 				>
 					<img src={projects} alt="projects slide" />
 					<Carousel.Caption className="caption">
@@ -19,7 +22,7 @@ export default function Home(props) {
 				</Carousel.Item>
 				<Carousel.Item
 					className="slide"
-					onClick={() => props.setContent("work")}
+					onClick={() => navigate("/portfolio/work")}
 				>
 					<img src={work} alt="work slide" />
 
@@ -30,7 +33,7 @@ export default function Home(props) {
 				</Carousel.Item>
 				<Carousel.Item
 					className="slide"
-					onClick={() => props.setContent("research")}
+					onClick={() => navigate("/portfolio/research")}
 				>
 					<img src={research} alt="research slide" />
 
