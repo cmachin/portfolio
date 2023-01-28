@@ -12,16 +12,16 @@ export default function Navigation() {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="responsive-navbar-nav">
 					<Nav className="me-auto">
-						<Nav.Link href="#" onClick={() => navigate("/portfolio/home")}>
+						<Nav.Link href="#" onClick={() => navigate("/home")}>
 							Home
 						</Nav.Link>
-						<Nav.Link href="#" onClick={() => navigate("/portfolio/projects")}>
+						<Nav.Link href="#" onClick={() => navigate("/projects")}>
 							Projects
 						</Nav.Link>
-						<Nav.Link href="#" onClick={() => navigate("/portfolio/work")}>
+						<Nav.Link href="#" onClick={() => navigate("/work")}>
 							Work
 						</Nav.Link>
-						<Nav.Link href="#" onClick={() => navigate("/portfolio/research")}>
+						<Nav.Link href="#" onClick={() => navigate("/research")}>
 							Research
 						</Nav.Link>
 					</Nav>

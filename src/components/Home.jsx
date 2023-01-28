@@ -10,20 +10,14 @@ export default function Home() {
 	return (
 		<>
 			<Carousel variant="dark" interval={3000} className="carousel-slides">
-				<Carousel.Item
-					className="slide"
-					onClick={() => navigate("/portfolio/projects")}
-				>
+				<Carousel.Item className="slide" onClick={() => navigate("/projects")}>
 					<img src={projects} alt="projects slide" />
 					<Carousel.Caption className="caption">
 						<h3>Projects</h3>
 						<p>See the projects I've worked on</p>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item
-					className="slide"
-					onClick={() => navigate("/portfolio/work")}
-				>
+				<Carousel.Item className="slide" onClick={() => navigate("/work")}>
 					<img src={work} alt="work slide" />
 
 					<Carousel.Caption className="caption">
@@ -31,10 +25,7 @@ export default function Home() {
 						<p>Know my work experience</p>
 					</Carousel.Caption>
 				</Carousel.Item>
-				<Carousel.Item
-					className="slide"
-					onClick={() => navigate("/portfolio/research")}
-				>
+				<Carousel.Item className="slide" onClick={() => navigate("/research")}>
 					<img src={research} alt="research slide" />
 
 					<Carousel.Caption className="caption">

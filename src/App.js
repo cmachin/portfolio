@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import Spinner from "react-bootstrap/Spinner";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
@@ -11,24 +11,19 @@ const Work = lazy(() => import("./components/Work"));
 
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Navigation />
 			<Suspense fallback={<Spinner animation="border" className="loader" />}>
 				<Routes>
-					<Route exact path="/*" element={<Navigate to="/portfolio/home" />} />
-					<Route
-						exact
-						path="/portfolio/*"
-						element={<Navigate to="/portfolio/home" />}
-					/>
-					<Route exact path="/portfolio/home" element={<Home />} />
-					<Route exact path="/portfolio/projects" element={<Projects />} />
-					<Route exact path="/portfolio/work" element={<Work />} />
-					<Route exact path="/portfolio/research" element={<Research />} />
+					<Route exact path="/" element={<Navigate to="/home" />} />
+					<Route exact path="/home" element={<Home />} />
+					<Route exact path="/projects" element={<Projects />} />
+					<Route exact path="/work" element={<Work />} />
+					<Route exact path="/research" element={<Research />} />
 				</Routes>
 			</Suspense>
 			<Footer></Footer>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
