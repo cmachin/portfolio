@@ -4,7 +4,7 @@ import projects from "../images/projects.png";
 import research from "../images/research.png";
 import work from "../images/work.png";
 
-export default function Home(props) {
+export default function Home() {
 	const navigate = useNavigate();
 
 	return (

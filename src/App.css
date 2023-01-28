@@ -98,7 +98,7 @@
 
 .fade-exit {
 	opacity: 1;
-	transform: translate(0, 100vh);
+	/* transform: translate(0, 100vw); */
 }
 
 .fade-exit.fade-exit-active {
