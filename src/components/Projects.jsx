@@ -15,7 +15,7 @@ export default function Projects() {
 			image: website,
 			title: "Portfolio",
 			description:
-				"Website portfolio for documenting my work history, showcasing my research and displaying my coding projects",
+				"Website portfolio for documenting my work history, showcasing my research and displaying my coding projects.",
 			link: "google.com",
 		},
 		{
@@ -23,7 +23,7 @@ export default function Projects() {
 			image: greenlease,
 			title: "Greenlease",
 			description:
-				"Web application that helps students from the University of Puerto Rico find rent and lease accommodations near the university",
+				"Web application that helps students from the University of Puerto Rico find rent and lease accommodations near the university.",
 			link: "https://github.com/cmachin?tab=repositories",
 		},
 		{
@@ -31,14 +31,14 @@ export default function Projects() {
 			image: databased,
 			title: "Email App",
 			description:
-				"Fully functioning email platform where users can add friends, send emails, edit emails, and see some really cool stats",
+				"Fully functioning email platform where users can add friends, send emails, edit emails, and see some really cool stats.",
 			link: "https://github.com/cmachin?tab=repositories",
 		},
 		{
 			date: "Aug 2021 - Dec 2021",
 			image: doctor,
 			title: "Doctor Finder App",
-			description: "Search for doctors near you based on your medical needs",
+			description: "Search for doctors near you based on your medical needs.",
 			link: "https://github.com/cmachin?tab=repositories",
 		},
 	];

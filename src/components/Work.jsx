@@ -17,7 +17,7 @@ export default function Work() {
 			title: "GE Healthcare",
 			subtitle: "Software Engineering Intern",
 			description: [
-				"Developed browser-based tools for data visualization.",
+				"Develop browser-based tools for data visualization using the Angular framework.",
 				"Prepared and submitted reports and other documentation about software development.",
 			],
 		},

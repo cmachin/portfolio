@@ -86,23 +86,23 @@
 
 .fade-enter {
 	opacity: 0;
-	/* transform: translate(0, 100vh); */
-	/* z-index: 1; */
+	transform: translate(0, 100vh);
+	z-index: 1;
 }
 
 .fade-enter.fade-enter-active {
 	opacity: 1;
-	/* transform: translate(0, 0); */
+	transform: translate(0, 0);
 	transition: opacity 250ms ease-out;
 }
 
 .fade-exit {
 	opacity: 1;
-	/* transform: translate(0, 100vw); */
+	transform: translate(0, 100vw);
 }
 
 .fade-exit.fade-exit-active {
 	opacity: 0;
-	/* transform: translate(0, 30rem); */
+	transform: translate(0, 30rem);
 	transition: opacity 250ms ease-in;
 }
