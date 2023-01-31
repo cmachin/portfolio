@@ -23,9 +23,9 @@ export default function Research() {
 									<Accordion.Header>More info</Accordion.Header>
 									<Accordion.Body>
 										Autonomous surface vehicle designed for gathering bathymetry
-										data. <br /> <br />I was charge of developing the official
-										laboratory website and also developed data visualization
-										tools for bathymetry data.
+										data. <br /> <br />I was in charge of developing the
+										official laboratory website and also developed data
+										visualization tools for bathymetry data.
 									</Accordion.Body>
 								</Accordion.Item>
 							</Accordion>

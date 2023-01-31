@@ -19,15 +19,49 @@
 	cursor: pointer;
 }
 
-.poem {
+.description {
+	/* border: 1px solid red; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	margin: 2rem;
+	padding: 1rem;
+}
+
+.description p {
+	font-weight: bold;
+}
+
+.description i {
+	word-spacing: 0.1rem;
+	margin: 1rem 0 0 0;
+}
+
+.description footer {
+	margin-top: 2rem;
+	text-align: center;
 	/* border: 1px solid red; */
 }
 
-.poem footer {
-	margin-top: 2rem;
-	/* border: 1px solid red; */
+/* The typing effect */
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: orange;
+	}
 }
 
 .caption {
@@ -82,27 +116,4 @@
 	position: absolute;
 	left: 50vw;
 	top: 30vh;
-}
-
-.fade-enter {
-	opacity: 0;
-	transform: translate(0, 100vh);
-	z-index: 1;
-}
-
-.fade-enter.fade-enter-active {
-	opacity: 1;
-	transform: translate(0, 0);
-	transition: opacity 250ms ease-out;
-}
-
-.fade-exit {
-	opacity: 1;
-	transform: translate(0, 100vw);
-}
-
-.fade-exit.fade-exit-active {
-	opacity: 0;
-	transform: translate(0, 30rem);
-	transition: opacity 250ms ease-in;
 }
