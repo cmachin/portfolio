@@ -17,7 +17,7 @@ export default function Home() {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item className="slide" onClick={() => navigate("/research")}>
-					<img src={"/images/research.png"} alt="research slide" />
+					<img src={"/portfolio/images/research.png"} alt="research slide" />
 					<Carousel.Caption className="caption">
 						<h3>Research</h3>
 						<p>Check out my research</p>
