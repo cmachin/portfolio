@@ -1,6 +1,7 @@
 import Button from "react-bootstrap/Button";
 import Carousel from "react-bootstrap/Carousel";
 import { useNavigate } from "react-router-dom";
+import Typewriter from "../components/Typewriter";
 
 export default function Home() {
 	const navigate = useNavigate();
@@ -37,6 +38,9 @@ export default function Home() {
 			>
 				View Resume
 			</Button>
+			<div className="typewriter">
+				<Typewriter>Email: machin.cam@gmail.com</Typewriter>
+			</div>
 		</div>
 	);
 }

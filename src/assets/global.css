@@ -51,6 +51,15 @@ body {
 	box-shadow: var(--shadow);
 }
 
+.typewriter {
+	margin: 5rem 0 0 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.3rem;
+	/* letter-spacing: 0.1rem; */
+	font-weight: 600;
+}
+
 .certifications {
 	margin-top: 5rem;
 }
