@@ -39,7 +39,7 @@ export default function Home() {
 				View Resume
 			</Button>
 			<div className="typewriter">
-				<Typewriter>Email: machin.cam@gmail.com</Typewriter>
+				<Typewriter>machin.cam@gmail.com</Typewriter>
 			</div>
 		</div>
 	);
