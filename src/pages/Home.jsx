@@ -39,7 +39,7 @@ export default function Home() {
 				View Resume
 			</Button>
 			<div className="typewriter">
-				<Typewriter>machin.cam@gmail.com</Typewriter>
+				<Typewriter speed={25}>machin.cam@gmail.com</Typewriter>
 			</div>
 		</div>
 	);
