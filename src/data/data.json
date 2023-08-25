@@ -4,25 +4,25 @@
 			"date": "Jan 2023",
 			"image": "/portfolio/images/website.png",
 			"title": "Portfolio",
-			"description": "Website portfolio for documenting my work history, showcasing my research and displaying my coding projects."
+			"description": "Website portfolio for documenting my work history, showcasing my research and displaying my cool projects."
 		},
 		{
 			"date": "Jan 2023 - May 2023",
 			"image": "/portfolio/images/greenlease.png",
 			"title": "Greenlease",
-			"description": "Web application that helps students from the University of Puerto Rico find rent and lease accommodations near the university."
+			"description": "Housing platform that helps students from the University of Puerto Rico find convenient rent and lease accommodations."
 		},
 		{
 			"date": "Aug 2022 - Dec 2022",
 			"image": "/portfolio/images/databased.png",
 			"title": "Email App",
-			"description": "Fully functioning email platform where users can add friends, send emails, edit emails, and see some really cool stats."
+			"description": "Email platform where users can interact by sending emails, adding friends, and see some really cool stats."
 		},
 		{
 			"date": "Aug 2021 - Dec 2021",
 			"image": "/portfolio/images/doctor.png",
 			"title": "Doctor Finder App",
-			"description": "Search for doctors near you based on your medical needs."
+			"description": "Medical platform that helps you find doctors near you based on your medical needs."
 		}
 	],
 	"research": [
@@ -31,18 +31,16 @@
 			"image": "/portfolio/images/bob.png",
 			"title": "Bathymetry ASV",
 			"description": [
-				"Autonomous surface vehicle designed for gathering bathymetry data.",
-				"I was in charge of developing the official laboratory website and also developed data visualization tools for bathymetry data."
+				"Autonomous surface vehicle designed for gathering and studying ocean floor data."
 			],
 			"link": "https://sites.google.com/view/bio-optics/projects/bob?authuser=0"
 		},
 		{
 			"date": "Jan 2020 - Dec 2021",
 			"image": "/portfolio/images/serrt.png",
-			"title": "Solar-Powered Race Car",
+			"title": "Solar Race Car",
 			"description": [
-				"University of Puerto Rico’s (SERRT) project aimed at solar energy research with a focus on transportation.",
-				"As part of the telemetry division, I developed telemetry gathering and monitoring software."
+				"University of Puerto Rico’s research project aimed at solar energy research with a focus on racing."
 			],
 			"link": "https://www.facebook.com/Serrt.Uprm/?ref=page_internal"
 		}
