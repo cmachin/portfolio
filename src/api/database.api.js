@@ -1,4 +1,4 @@
-import data from "../data/data.json";
+import data from "../data/database.json";
 
 export function getProjects() {
 	return data.projects;

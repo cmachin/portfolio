@@ -2,7 +2,7 @@ import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import ListGroup from "react-bootstrap/ListGroup";
-import { getWork } from "../api/fetcher";
+import { getWork } from "../api/database.api";
 import Separator from "../components/Separator";
 
 export default function Work() {

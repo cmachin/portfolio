@@ -2,7 +2,7 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import { getCertifications } from "../api/fetcher";
+import { getCertifications } from "../api/database.api";
 
 export default function Certifications() {
 	return (
