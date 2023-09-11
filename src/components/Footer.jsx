@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 
@@ -6,7 +5,7 @@ export default function Footer() {
 	return (
 		<Navbar
 			bg="light"
-			variant="ligth"
+			variant="light"
 			fixed="bottom"
 			className="justify-content-center"
 		>
