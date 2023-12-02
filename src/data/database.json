@@ -47,7 +47,17 @@
 	],
 	"work": [
 		{
-			"date": "May 2023 - Jul 2023",
+			"date": "Jul 2023 - Present",
+			"title": "GE Healthcare",
+			"subtitle": "Software Engineer - EEDP",
+			"description": [
+				"Implemented and utilized software testing frameworks, such as Jest, to deliver reliable software.",
+				"Developed software applications using Angular and Electron frameworks.",
+				"Participated and collaborated with a team of experienced software engineers in an agile environment."
+			]
+		},
+		{
+			"date": "May 2022 - Jul 2022",
 			"title": "GE Healthcare",
 			"subtitle": "Software Engineering Intern",
 			"description": [
