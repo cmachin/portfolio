@@ -1,1 +1,0 @@
-import{j as i,k as a,C as s}from"./index-49e05461.js";import{c as e}from"./fetcher-b010e389.js";import{R as c}from"./Row-f2154c4b.js";function m(){return i("div",{className:"certifications",children:e().map((r,t)=>a(s,{children:[i("h1",{children:r.title}),i(c,{className:"item-cards",children:i("img",{src:r.image,alt:r.title})})]},t))})}export{m as default};

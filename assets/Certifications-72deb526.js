@@ -1,0 +1,1 @@
+import{j as i,k as a,C as s}from"./index-bcd92468.js";import{R as e}from"./Row-7fa3e73b.js";import{c}from"./database.api-d20ab8c7.js";function m(){return i("div",{className:"certifications",children:c().map((r,t)=>a(s,{children:[i("h1",{children:r.title}),i(e,{className:"item-cards",children:i("img",{src:r.image,alt:r.title})})]},t))})}export{m as default};
