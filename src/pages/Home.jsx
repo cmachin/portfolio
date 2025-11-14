@@ -33,7 +33,7 @@ export default function Home() {
 			</Carousel>
 			<Button
 				variant="dark"
-				href="/portfolio/documents/Resume_Carlos_Machin_23.pdf"
+				href="/portfolio/documents/resume_carlos_machin.pdf"
 				target="_blank"
 			>
 				View Resume
