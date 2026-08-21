@@ -59,7 +59,17 @@
   ],
   "work": [
     {
-      "date": "Jul 2023 - Present",
+      "date": "Jan 2026 - Present",
+      "title": "Reliaquest",
+      "subtitle": "Full-Stack Software Engineer",
+      "description": [
+        "Developed frontend and backend features for an agentic cybersecurity platform using React, Typescript, Java, and AI tools to provide users with insights into their environment`s security.",
+        "Developed and leveraged agentic workflows to improve software development efficiency.",
+        "Mentored junior software engineers to ensure their early career success."
+      ]
+    },
+    {
+      "date": "Jul 2023 - Jan 2026",
       "title": "GE Healthcare",
       "subtitle": "Software Engineer",
       "description": [
